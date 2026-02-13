@@ -1,0 +1,90 @@
+/* Full Page Setup */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Background for Home */
+.home-bg {
+    background: linear-gradient(rgba(0,0,0,0.6),
+                                rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background for Explore */
+.explore-bg {
+    background: linear-gradient(rgba(0,0,0,0.6),
+                                rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}

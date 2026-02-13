@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ location }}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="explore-bg">
+
+<div class="container">
+
+    <!-- Location Title -->
+    <h2>📍 {{ location }}</h2>
+
+    <!-- View Map -->
+    <form action="https://www.google.com/maps" method="get" target="_blank">
+        <input type="hidden" name="q" value="{{ location }}">
+        <button type="submit">🌍 View Map</button>
+    </form>
+
+    <!-- Famous Places -->
+    <form action="https://www.google.com/maps/search/" method="get" target="_blank">
+        <input type="hidden" name="q" value="famous places in {{ location }}">
+        <button type="submit">🏛 Famous Places</button>
+    </form>
+
+    <!-- Nearby Restaurants -->
+    <form action="https://www.google.com/maps/search/" method="get" target="_blank">
+        <input type="hidden" name="q" value="restaurants near {{ location }}">
+        <button type="submit">🍽 Nearby Restaurants</button>
+    </form>
+
+    <!-- Directions From My Location -->
+    <form action="https://www.google.com/maps/dir/" method="get" target="_blank">
+        <input type="hidden" name="api" value="1">
+        <input type="hidden" name="destination" value="{{ location }}">
+        <button type="submit">🚗 Get Directions (From My Location)</button>
+    </form>
+
+    <!-- Starting Location Input -->
+    <form action="/custom_direction" method="POST">
+        <input
+            type="text"
+            name="source"
+            placeholder="Enter starting location"
+            required
+        >
+
+        <input
+            type="hidden"
+            name="destination"
+            value="{{ location }}"
+        >
+
+        <button type="submit">🛣 Custom Route</button>
+    </form>
+
+    <!-- Back to Home -->
+    <form action="/" method="get">
+        <button type="submit">⬅ Back to Home</button>
+    </form>
+
+</div>
+
+</body>
+</html>

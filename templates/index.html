@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Tour Guide</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Google Maps Script (Autocomplete) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places"></script>
+</head>
+
+
+<body class="home-bg">
+
+<div class="container">
+    <h1>🌍 Virtual Tour Guide</h1>
+    <p>Discover famous places around the world</p>
+
+    <form action="/explore" method="POST">
+        <input type="text" name="location"
+               placeholder="Enter city or place name" required>
+        <button type="submit">Explore</button>
+    </form>
+</div>
+
+</body>
+</html>
