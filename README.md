@@ -52,6 +52,30 @@ python app.py
 ### 5️⃣ Open in Browser
 http://127.0.0.1:5000
 
+## 📷 Output
+
+### Home Page
+![Home Page](Screenshot 2026-02-12 200339.png)
+
+### Location Search
+![Search Page](Screenshot 2026-02-12 200419.png)
+
+### Map View
+![Map View](Screenshot 2026-02-12 200444.png)
+
+### Explore Page
+![Explore Page](Screenshot 2026-02-12 200515.png)
+
+### Nearby Places
+![Nearby Places](Screenshot 2026-02-12 200537.png)
+
+### Directions
+![Directions](Screenshot 2026-02-12 200755.png)
+
+### Final View
+![Final View](Screenshot 2026-02-12 200824.png)
+
+
 ## 👩‍💻 Author
 Rinita Javvadi.
 
